@@ -5,7 +5,7 @@ console.log('STRIPE_SECRET_KEY:', process.env.STRIPE_SECRET_KEY);
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
@@ -2915,6 +2915,10 @@ app.listen(PORT, () => {
     console.log(`   • Admin: admin@gmail.com / admin123`);
     console.log(`\n✅ Listo para usar!`);
 });
+
+app.listen(PORT, () => {
+    console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
+  });
 
 app.post('/api/payments/create-stripe-payment', async (req, res) => {
     console.log('📨 Petición recibida en create-stripe-payment');
