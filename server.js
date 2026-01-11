@@ -1,3 +1,4 @@
+
 // server.js - VERSIÓN COMPLETA CON MÚLTIPLES IMÁGENES
 require('dotenv').config();
 console.log('STRIPE_SECRET_KEY:', process.env.STRIPE_SECRET_KEY);

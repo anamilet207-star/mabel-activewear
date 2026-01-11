@@ -9,6 +9,7 @@ const pool = new Pool({
     database: 'Tienda_mb'
 });
 
+
 // Probar la conexión al iniciar
 pool.connect((err, client, done) => {
     if (err) {
